@@ -9,8 +9,11 @@ func _ready():
 	Gold = get_node("StatsBackground/Gold")
 	description = get_node("Description/Label")
 	
-	update_stats()
 	update_description()
+	
+	Main.game.HP = Main.game.maxHP
+	update_stats()
+	
 	
 func update_stats():
 	Gold.text = "Gold: %s" % Main.game.gold

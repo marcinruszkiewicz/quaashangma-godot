@@ -60,8 +60,7 @@ func visitRoom():
 				gameScene.update_stats()
 				
 				if Main.game.HP <= 0:
-					# redirect to death scene
-					pass
+					Main.goto_scene("res://Scenes/YouDied.tscn")
 				else:
 					room_description += "\nYou manage to defeat the monsters."
 				
@@ -83,8 +82,7 @@ func visitRoom():
 					Main.game.HP -= hp_loss
 					gameScene.update_stats()
 					if Main.game.HP <= 0:
-						# redirect to death scene
-						pass
+						Main.goto_scene("res://Scenes/YouDied.tscn")
 					else:
 						if hp_loss == 0:
 							room_description += "\nYou easily avoid the trap."

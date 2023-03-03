@@ -9,8 +9,7 @@ func _on_Button_pressed():
 	Main.play_click() 
 	
 	if gameScene.floorplan.is_last_set(Main.currentRooms):
-		# exiting the dungeon floor, show transition screen
-		pass
+		Main.goto_scene("res://Scenes/FloorTransition.tscn")
 	else:
 		Main.currentRooms += 1
 		gameScene.init_rooms()

@@ -4,6 +4,7 @@ var HP:Label
 var Gold:Label
 var description:Label
 var title:Label
+var forward:NinePatchRect
 
 var rooms = Array()
 var room_types = ["empty", "monster", "trap", "treasure", "exit"]
@@ -14,6 +15,7 @@ func _ready():
 	HP = get_node("StatsBackground/HP")
 	Gold = get_node("StatsBackground/Gold")
 	description = get_node("Description/Label")
+	forward = get_node("ForwardButton")
 	rooms.append(get_node("RoomTop"))
 	rooms.append(get_node("RoomLeft"))
 	rooms.append(get_node("RoomBottom"))
@@ -39,8 +41,9 @@ func init_dungeon():
 	floorplan = factory.new(Main.currentFloor)
 	
 func init_rooms():	
+	forward.visible = false
 	var room_set = floorplan.rooms[Main.currentRooms]
-
+	
 	for node in rooms:
 		node.clearRoom()
 
