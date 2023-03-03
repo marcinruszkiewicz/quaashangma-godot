@@ -1,0 +1,29 @@
+{
+  "room_descriptions": {
+    "empty": [
+      "This room looks like it's empty.",
+      "There isn't anything interesting here.",
+      "Not much to see here."
+    ],
+    "trap": [
+      "You hear a swoosh and a giant blade comes out from the wall.",
+      "You hear a *click* when you step on a stone.",
+      "There's a spiked pit in the middle of the room."
+    ],
+    "monster": [
+      "You're under attack!",
+      "The Demons in this room are circling around you.",
+      "A Demon blocks your way out."
+    ],
+    "treasure": [
+      "You find a big treasure chest in this room.",
+      "A pile of bones and random crap is here.",
+      "There are piles of gold and treasure here."
+    ],
+    "exit": [
+      "There's a great doorway on one of the walls. Maybe it's the way down?",
+      "Looks like you found the stairway leading down. Does this dungeon ever end?",
+      "The stairs leading down look a bit ruined, but should be stable enough to proceed."
+    ]
+  }
+}

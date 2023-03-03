@@ -31,7 +31,8 @@ func _on_EntranceButton_mouse_exited():
 		image.self_modulate = Color(1, 1, 1, 1)
 
 func _on_EntranceButton_pressed():
-	Main.currentFloor = 1;
+	Main.currentFloor = destination
 	Main.currentRooms = 0;
 	Main.play_click()
-	print("clicked %s" % destination)
+	
+	Main.goto_scene("res://Scenes/Game.tscn")

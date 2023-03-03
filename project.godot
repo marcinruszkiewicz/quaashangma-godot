@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Reference",
+"class": "DungeonFloor",
+"language": "GDScript",
+"path": "res://Src/DungeonFloor.gd"
+}, {
 "base": "",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://addons/godot-git-plugin/git_api.gdns"
 } ]
 _global_script_class_icons={
+"DungeonFloor": "",
 "GitAPI": ""
 }
 
