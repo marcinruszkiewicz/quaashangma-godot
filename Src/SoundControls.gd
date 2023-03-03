@@ -13,8 +13,10 @@ func _on_MusicCheckbox_pressed():
 	Main.settings.playMusic = musicControl.pressed
 	Main.play_click()
 	Main.toggle_music()
+	Main.save_settings()
 
 func _on_SoundCheckbox_pressed():
 	Main.settings.playSound = soundControl.pressed
 	Main.play_click()
+	Main.save_settings()
 	

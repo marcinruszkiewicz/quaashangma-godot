@@ -14,6 +14,7 @@ func _ready():
 	Main.game.HP = Main.game.maxHP
 	update_stats()
 	
+	Main.save_data()
 	
 func update_stats():
 	Gold.text = "Gold: %s" % Main.game.gold
